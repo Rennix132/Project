@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <span class="logo-icon">🏠</span> 
+                <span class="logo-text">PrimeProp</span>
+            </a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landing.html">Landing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-btn">Light Mode</button>
+
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <div class="page-title">
+            <h1>Our Gallery</h1>
+            <p>Explore our portfolio of premium properties.</p>
+        </div>
+
+        <section class="gallery-section">
+            <h2>Office Spaces</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="assets/lan1.avif" alt="Office 1">
+                </div>
+                <div class="photo-card">
+                    <img src="assets/g1.avif" alt="Office 2">
+                </div>
+                <div class="photo-card">
+                    <img src="assets/g3.avif" alt="Office 3">
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Modern Houses</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="assets/g5.jpg" alt="House 1">
+                </div>
+                <div class="photo-card">
+                    <img src="assets/lan2.jpg" alt="House 2">
+                </div>
+                <div class="photo-card">
+                    <img src="assets/g4.avif" alt="House 3">
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Luxury Apartments</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="assets/lan 7.jpeg" alt="Apartment 1">
+                </div>
+                <div class="photo-card">
+                    <img src="assets/lan8.jpeg" alt="Apartment 2">
+                </div>
+                <div class="photo-card">
+                    <img src="assets/lan9.jpeg" alt="Apartment 3">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 PrimeProp.</p>
+    </footer>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>

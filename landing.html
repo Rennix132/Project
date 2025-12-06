@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Types</title>
+    <link rel="stylesheet" href="css/lan.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <span class="logo-icon">🏠</span> 
+                <span class="logo-text">PrimeProp</span>
+            </a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="landing.html" class="active">Landing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <button id="theme-toggle" class="theme-btn">Light Mode</button>
+
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <main class="landing-container">
+        
+        <div class="landing-header">
+            <h1>Explore Apartment Types</h1>
+            <button id="view-more-btn" class="cta-button">VIEW MORE</button>
+        </div>
+
+        <div class="cards-grid">
+            
+            <div class="card" onclick="selectCard(this, 'Office')">
+                <div class="image-wrapper">
+                    <img src="assets/lan1.avif" alt="Office Building">
+                </div>
+                <h3>Office</h3>
+            </div>
+
+            <div class="card" onclick="selectCard(this, 'House')">
+                <div class="image-wrapper">
+                    <img src="assets/lan2.jpg" alt="Modern House">
+                </div>
+                <h3>House</h3>
+            </div>
+
+            <div class="card" onclick="selectCard(this, 'Apartments')">
+                <div class="image-wrapper">
+                    <img src="assets/lan3.avif" alt="Apartment Complex">
+                </div>
+                <h3>Apartments</h3>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/lan.js"></script>
+</body>
+</html>

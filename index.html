@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeProp Landing</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                <span class="logo-icon">🏠</span> 
+                <span class="logo-text">PrimeProp</span>
+            </a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="landing.html">Landing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="theme-toggle" class="theme-btn">Light Mode</button>
+        
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Easy Way to Find a <br> Perfect Property</h1>
+                    <p class="subtitle">
+                        A streamlined, professional solution designed to guide you toward the ideal property with confidence and efficiency
+                    </p>
+
+                    <form class="email-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Enter a valid email address" required>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="assets/home.avif" alt="Modern Building Architecture">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 PrimeProp.</p>
+    </footer>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+:root {
+    --bg-color: #0b0f19;
+    --card-bg: #1c2230; 
+    --input-bg: #2b3245;
+    --text-color: #ffffff;
+    --text-muted: #a0a0a0;
+    --primary-color: #8c30f5; 
+    --font-main: 'Poppins', sans-serif;
+}
+
+body.light-mode {
+    --bg-color: #f4f6f8;
+    --card-bg: #ffffff;
+    --input-bg: #e0e0e0;
+    --text-color: #222222;
+    --text-muted: #555555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+.theme-btn {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.theme-btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-color);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 80vh;
+}
+
+.hero-container {
+    background-color: var(--card-bg);
+    border-radius: 40px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.image-source {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.email-form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.email-form input {
+    background-color: var(--input-bg);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: var(--text-color);
+    flex: 1;
+    min-width: 200px;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.email-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+    letter-spacing: 1px;
+}
+
+.email-form button:hover {
+    transform: scale(1.05);
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--card-bg);
+}
+
+@media (max-width: 992px) {
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content { padding: 40px; }
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .burger { display: block; }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .hero-image { height: 300px; }
+    .hero-content { padding: 30px 20px; text-align: center; }
+    .subtitle { margin: 0 auto 20px auto; }
+    .email-form { flex-direction: column; }
+    .email-form input, .email-form button { width: 100%; }
+}
